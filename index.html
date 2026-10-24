@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Бесплатный вебинар Дарьи Богоев «Из аренды - в своё !» 4 ноября в 19:00 : как купить жильё в Норвегии, даже если у вас нет 10%">
 <meta property="og:title" content="Из аренды - в своё ! Бесплатный вебинар 4 ноября">
-<meta property="og:description" content="500 мест на бесплатный вебинар разобрали за 2 дня. Открыта предзапись на курс по недвижимости">
+<meta property="og:description" content="Первые 500 мест разобрали за 2 дня. Мы открыли ещё 500 мест на бесплатный вебинар 4 ноября">
 <meta property="og:type" content="website">
 <title>Из аренды в своё</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,6 +64,33 @@ a{color:inherit}
 .closed{margin-top:22px;background:#FDECEC;border:3px solid #C8323C;border-radius:20px;padding:24px 26px;box-shadow:0 14px 30px -18px rgba(200,50,60,.45)}
 .closed h3{font-family:var(--display);font-size:24px;line-height:1.2;color:#C8323C}
 .closed .tag-red{display:inline-block;background:#C8323C;color:#fff;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:12px}
+.openbar{background:linear-gradient(90deg,#1F4A4F,#2f6b70);color:#fff;text-align:center;font-weight:600;font-size:16px;padding:12px 16px;line-height:1.35}
+.openbar b{font-family:var(--display);font-weight:700;color:var(--sun)}
+.openbar a{color:#fff;text-decoration:underline}
+.reopen{margin-top:22px;background:#fff;border:3px solid var(--sun);border-radius:22px;padding:24px 26px;box-shadow:0 18px 36px -20px rgba(214,154,46,.6);position:relative;overflow:hidden}
+.reopen h3{font-family:var(--display);font-size:24px;line-height:1.2;color:var(--ink)}
+.reopen p{margin-top:10px;font-size:16px}
+.reopen .tag-gold{display:inline-block;background:var(--sun);color:var(--ink);font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:12px}
+.seatbar{margin-top:18px}
+.seatbar .nums{display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.seatbar .nums div{font-size:14px;line-height:1.3;color:var(--muted)}
+.seatbar .nums b{display:block;font-family:var(--display);font-size:26px;line-height:1.1}
+.seatbar .nums .l b{color:var(--ink)}
+.seatbar .nums .r{text-align:right}
+.seatbar .nums .r b{color:#2BA84A}
+.track{display:flex;height:34px;border-radius:999px;overflow:hidden;margin-top:10px;border:2px solid var(--ink);background:#fff}
+.track .taken{width:50%;background:repeating-linear-gradient(135deg,#1F4A4F 0 14px,#2f6b70 14px 28px);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;letter-spacing:.04em}
+.track .free{width:50%;background:#EAF7EE;color:#1E7A37;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;border-left:2px dashed var(--ink)}
+.seatbar .scale{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:6px}
+.waves{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.wave{border-radius:14px;padding:12px 14px;font-size:14px;line-height:1.3}
+.wave b{display:block;font-family:var(--display);font-size:20px;margin-bottom:2px}
+.wave.done{background:#F1F4F3;color:var(--muted)}
+.wave.done b{text-decoration:line-through;color:var(--muted)}
+.wave.now{background:#FFF4DC;border:2px solid var(--sun);color:var(--ink)}
+.pulse{display:inline-block;width:10px;height:10px;border-radius:50%;background:#2BA84A;margin-right:6px;box-shadow:0 0 0 0 rgba(43,168,74,.6);animation:pl 1.6s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(43,168,74,.6)}70%{box-shadow:0 0 0 10px rgba(43,168,74,0)}100%{box-shadow:0 0 0 0 rgba(43,168,74,0)}}
+@media (prefers-reduced-motion:reduce){.pulse{animation:none}}
 .redbar{background:#C8323C;color:#fff;text-align:center;font-weight:600;font-size:16px;padding:12px 16px;line-height:1.35}
 .redbar b{font-family:var(--display);font-weight:700}
 .redbar a{color:#fff;text-decoration:underline}
@@ -205,7 +232,7 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
 </style>
 </head>
 <body>
-<div class="redbar">⛔ <b>Бесплатный вебинар : все 500 мест разобрали за 2 дня</b> · <a href="#course">А предзапись на курс уже открыта</a></div>
+<div class="openbar">🎉 <b>Мы открыли ещё 500 мест !</b> Первые 500 разобрали за 2 дня · <a href="#cta-hero">Успеть зарегистрироваться</a></div>
 
 
 <div class="wrap">
@@ -222,21 +249,29 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
       <div class="meta">
         <span class="chip">📅 <b>4 ноября</b>, среда</span>
         <span class="chip">🕕 <b>19:00</b> по Норвегии</span>
-        <span class="chip">💻 Онлайн, Zoom</span>
+        <span class="chip">💻 Онлайн</span>
         <span class="chip">🎟 Бесплатно по регистрации</span>
       </div>
-      <p class="seats" style="color:#C8323C"><b style="color:#C8323C">Все 500 мест на бесплатный вебинар разобрали за 2 дня</b> - регистрация на вебинар закрыта</p>
-      <div class="closed" id="closed">
-        <span class="tag-red">Регистрация на вебинар закрыта</span>
-        <h3>Все 500 мест на бесплатный вебинар заняты 🔥 Спасибо !</h3>
-        <p>Мы не ожидали такого интереса и пока останавливаем регистрацию на вебинар. Сейчас ищем возможность провести вебинар так, чтобы открыть больше мест. Но пока ничего не обещаем : гарантии, что получится, нет</p>
-        <p>Если места появятся - сразу сообщим в Instagram <b>@daria_norway</b></p>
-        <p class="muted">Вы уже зарегистрировались ? Спасибо за доверие 💛 Ссылку на вебинар пришлём совсем скоро</p>
-        <p style="margin-top:14px;padding-top:14px;border-top:1px solid rgba(200,50,60,.25)">🏡 <b>А вот предзапись на платный курс уже открыта.</b> Из-за такого интереса мы открыли её заранее, ещё до вебинара - чтобы самые заинтересованные получили лучшие условия первыми. <a href="#course" style="color:#C8323C;font-weight:700">Подробнее ↓</a></p>
+      <p class="seats"><b>Регистрация снова открыта</b> - вторая волна, ещё 500 мест</p>
+      <div class="reopen" id="reopen">
+        <span class="tag-gold">Хорошая новость</span>
+        <h3>Мы нашли способ - и открыли ещё 500 мест 🎉</h3>
+        <p>Первые 500 мест разобрали всего за 2 дня. Мы не ожидали такого интереса и перенесли эфир на платформу, где поместится больше людей</p>
+        <div class="seatbar" aria-label="Занято 500 мест из 1000, свободно 500">
+          <div class="nums">
+            <div class="l"><b>500</b>мест уже занято</div>
+            <div class="r"><b><span class="pulse"></span>500</b>мест свободно</div>
+          </div>
+          <div class="track"><div class="taken">ЗАНЯТО</div><div class="free">СВОБОДНО</div></div>
+          <div class="scale"><span>0</span><span>500</span><span>1 000</span></div>
+        </div>
+
+        <p><b>Не откладывайте :</b> в прошлый раз места закончились быстрее, чем мы думали</p>
+        <p style="color:var(--muted);font-size:15px">Уже зарегистрировались ? Ваше место за вами 💛 Ссылку на эфир пришлём в Telegram-канал</p>
       </div>
       <div class="cta-row" style="margin-top:22px">
         <a class="btn js-reg" id="cta-hero" href="#" target="_blank" rel="noopener">
-          Следить за новостями
+          Занять место во 2-й волне
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
         <a class="btn btn-ghost" href="#course">Предзапись на курс ↓</a>
@@ -376,7 +411,7 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
       <div class="date-card hl">
         <div class="big-date">4.11</div>
         <h3>Вебинар в 19:00 по Норвегии</h3>
-        <p>Разбираемся в цифрах и вариантах, пока всё понятно. Все 500 мест уже заняты</p>
+        <p>Разбираемся в цифрах и вариантах, пока всё понятно. Первые 500 мест разобрали за 2 дня - открыта вторая волна</p>
         <div class="count" aria-live="polite">
           <div><b id="c-d">-</b><span>дней</span></div>
           <div><b id="c-h">-</b><span>часов</span></div>
@@ -413,7 +448,7 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
   <div class="wrap">
     <div class="course">
       <div>
-        <span class="eyebrow">Регистрация на вебинар закрыта - а предзапись на курс открыта</span>
+        <span class="eyebrow">Открыта предзапись</span>
         <h3>Комплексный курс «Рынок недвижимости в Норвегии»</h3>
         <p>Мы видим, сколько людей хотят не просто послушать, а пройти весь путь к своему жилью с поддержкой. Поэтому открыли предзапись на платный курс заранее, ещё до вебинара</p>
         <p>Заполните анкету - и вы первыми узнаете условия и получите <b style="color:#fff">самую выгодную цену</b>. Это ни к чему не обязывает : просто вы будете в списке первых</p>
@@ -434,11 +469,11 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
   <div class="wrap">
     <div class="gift">
       <div>
-        <span class="eyebrow">Подарок для зарегистрированных</span>
+        <span class="eyebrow">Подарок за регистрацию</span>
         <h3>Чек-лист «Что подготовить до похода в банк»</h3>
-        <p>Уже ждёт всех, кто успел зарегистрироваться. Если откроем больше мест - он будет и для вас</p>
+        <p>Придёт сразу после регистрации - пройдитесь по нему до вебинара</p>
       </div>
-      <a class="btn js-reg" id="cta-gift" href="#" target="_blank" rel="noopener">Следить за новостями</a>
+      <a class="btn js-reg" id="cta-gift" href="#" target="_blank" rel="noopener">Забрать и зарегистрироваться</a>
     </div>
 
     <div class="sec-head" style="margin-top:64px">
@@ -446,7 +481,7 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
       <h2>Частые вопросы</h2>
     </div>
     <div class="faq">
-      <details id="faq-1"><summary>Это правда бесплатно ?</summary><p>Да, вебинар бесплатный. Но все 500 мест уже заняты, и регистрация сейчас на паузе. Если получится открыть больше мест, сообщим в Instagram @daria_norway</p></details>
+      <details id="faq-1"><summary>Это правда бесплатно ?</summary><p>Да, вебинар бесплатный. Первые 500 мест разобрали за 2 дня, и мы открыли ещё 500. Регистрируйтесь, пока места есть</p></details>
       <details id="faq-0"><summary>Во сколько начало, если я не в Норвегии ?</summary><p>Начало в 19:00 по норвежскому времени. Это 20:00 по Киеву и 18:00 по Лондону</p></details>
       <details id="faq-2"><summary>Будет ли запись ?</summary><p>Главное - быть в прямом эфире : там можно задать свой вопрос. Про запись напишем зарегистрированным на почту</p></details>
       <details id="faq-3"><summary>Мне подойдёт, если у меня временный ВНЖ ?</summary><p>Этот вопрос задают чаще всего - разберём на вебинаре, с каким статусом и на каких условиях банки и программы рассматривают заявки</p></details>
@@ -460,10 +495,10 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
   <div class="wrap final">
     <div>
       <h2>Своё жильё начинается с понятных цифр</h2>
-      <p>500 мест на бесплатный вебинар разобрали за 2 дня. Спасибо за доверие 💛 Если откроем больше мест - сообщим в Instagram. А предзапись на платный курс уже открыта : мест на курсе всего 100</p>
+      <p>4 ноября в 19:00 по Норвегии, онлайн, бесплатно. Первые 500 мест ушли за 2 дня - сейчас открыта вторая волна. А предзапись на платный курс уже открыта : мест на курсе всего 100</p>
     </div>
     <div>
-      <a class="btn js-reg" id="cta-final" href="#" target="_blank" rel="noopener">Следить за новостями</a>
+      <a class="btn js-reg" id="cta-final" href="#" target="_blank" rel="noopener">Занять место</a>
       <a class="btn btn-ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSfmup7WyW9JHXiJUlOY7RCpPvu8Lt7Cvmq4JCmGoRFLYSE5Gg/viewform?usp=sharing&amp;ouid=114015173701011261897" target="_blank" rel="noopener" style="margin-top:14px">Предзапись на курс</a>
     </div>
   </div>
@@ -476,13 +511,13 @@ footer{padding-block:28px;font-size:13px;color:var(--muted);display:flex;flex-wr
   </footer>
 </div>
 
-<div class="sticky"><a class="btn" id="cta-sticky" href="#course">Вебинар : мест нет · предзапись на курс ↓</a></div>
+<div class="sticky"><a class="btn js-reg" id="cta-sticky" href="#" target="_blank" rel="noopener">🎉 Открыли ещё 500 мест · занять место</a></div>
 
 <script>
 // Вставьте сюда ссылку на Google Форму
 var FORM_URL = "https://forms.gle/vrdivKsdXfM9fBWi6";
 // Регистрация на паузе : кнопки ведут в Instagram. Чтобы открыть снова - поставьте REG_PAUSED = false
-var REG_PAUSED = true;
+var REG_PAUSED = false;
 var NEWS_URL = "https://www.instagram.com/daria_norway/";
 
 (function(){
@@ -527,4 +562,4 @@ var NEWS_URL = "https://www.instagram.com/daria_norway/";
 </script>
 
 </body>
-</html> 
+</html>
